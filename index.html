@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Long Road — Residence · room plan, sizes and 3D</title>
+<meta name="description" content="Interactive room plan of the Long Road residence — both levels, every measured size, 3D model and scan photos.">
+<link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+
+<header class="top">
+  <h1>Long Road — Residence</h1>
+  <span class="sub">room scans Aug 6 2026 · 17 sections</span>
+  <span class="spacer"></span>
+  <div class="tg"><button id="b-l1" aria-pressed="true">LEVEL 1</button><button id="b-l2" aria-pressed="false">LEVEL 2</button></div>
+  <div class="tg"><button id="b-plan" aria-pressed="true">PLAN</button><button id="b-3d" aria-pressed="false">3D</button><button id="b-data" aria-pressed="false">DATA</button></div>
+  <div class="tg"><button id="b-dall" aria-pressed="true">ALL SIZES</button><button id="b-dsel" aria-pressed="false">SELECTED</button><button id="b-doff" aria-pressed="false">NO SIZES</button></div>
+  <div class="tg"><button id="b-ft" aria-pressed="true">FT</button><button id="b-m" aria-pressed="false">M</button></div>
+  <div class="tg"><button id="b-en" aria-pressed="true">EN</button><button id="b-ru" aria-pressed="false">RU</button></div>
+</header>
+
+<main>
+  <div class="stage">
+    <div class="sheet">
+      <div class="view on" id="view-plan"><svg id="svg-plan" preserveAspectRatio="xMidYMid meet"></svg></div>
+      <div class="view" id="view-3d"><svg id="svg-3d" preserveAspectRatio="xMidYMid meet"></svg></div>
+      <div class="view" id="view-data"><div class="dataview" id="dataview"></div></div>
+      <div class="hint" id="hint"></div>
+      <div class="legend" id="legend"></div>
+    </div>
+  </div>
+  <aside id="aside"></aside>
+</main>
+
+<div class="lightbox" id="lb"><img id="lbimg" alt=""></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
